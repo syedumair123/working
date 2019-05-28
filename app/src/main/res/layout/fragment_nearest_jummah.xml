@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    >
+
+
+    <TextView
+        android:id="@+id/text_HeadingJummah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search your nearest Jummah"
+        android:fontFamily="@font/segoeuiregular"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="normal"
+        android:layout_marginTop="@dimen/_41sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:textColor="@color/colorPrimary"/>
+
+
+    <RelativeLayout
+        android:id="@+id/Layout_EDT"
+        android:layout_marginTop="@dimen/_53sdp"
+        android:layout_below="@id/text_HeadingJummah"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Card_EDT_Town_City_"
+            android:layout_width="@dimen/_120sdp"
+            app:cardElevation="@dimen/_10sdp"
+            app:cardCornerRadius="@dimen/_11sdp"
+            android:layout_height="@dimen/_49sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/EDT_Town_city_"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:hint="Town/City"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:fontFamily="@font/segoeuiregular"
+                    android:paddingHorizontal="@dimen/_14sdp"
+                    android:textStyle="normal"
+                    />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+        <TextView
+            android:id="@+id/Text_OR_"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_toEndOf="@id/Card_EDT_Town_City_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-OR-"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/segoeuiregular"
+            android:textSize="@dimen/_14sdp"
+            />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/Card_EDT_PostalCode_"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_toEndOf="@id/Text_OR_"
+            app:cardElevation="@dimen/_10sdp"
+            android:layout_height="@dimen/_49sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/EDT_PostalCode_"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:hint="Postal Code"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/_14sdp"
+                    android:fontFamily="@font/segoeuiregular"
+                    android:paddingHorizontal="@dimen/_14sdp"
+                    android:textStyle="normal"
+                    />
+
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/BTN_Search_"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_59sdp"
+        android:background="#0396AB"
+        android:text="Search"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:fontFamily="@font/segoeuiregular"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:textColor="@color/white"/>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_49sdp"
+        android:layout_below="@id/Layout_EDT"
+        android:layout_marginRight="@dimen/_11sdp"
+        android:layout_marginLeft="@dimen/_11sdp"
+        app:cardElevation="@dimen/_10sdp">
+
+
+        <Spinner
+            android:id="@+id/JummahSpinner_"
+            android:background="@drawable/bg_spinnerwhite_"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

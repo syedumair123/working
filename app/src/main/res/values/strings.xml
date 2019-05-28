@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">My Mosque</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="AskImAMDAte">""<b>"Thrusday"</b>"  10th January 2019"</string>
+    <string name="time"><b>"4:30 PM"</b></string>
+    <string name="adhannotification"><b>"Adhan Notifications"</b></string>
+    <string name="sehriends"><b>"Sehri Ends"</b></string>
+    <string name="fajr"><b>"Fajr"</b></string>
+    <string name="sunrise"><b>"Sunrise"</b></string>
+    <string name="zuhr"><b>"Zuhr"</b></string>
+    <string name="asr"><b>"Asr"</b></string>
+    <string name="maghrib"><b>"Maghrib"</b></string>
+    <string name="isha"><b>"Isha"</b></string>
+    <string name="daily"><b>"DAILY"</b></string>
+    <string name="start"><b>"START"</b></string>
+    <string name="jamaat"><b>"JAMAAT"</b></string>
+    <string name="beginingoftimes"><b>"Beginning Times"</b></string>
+    <string name="fajr_"><b>"Fajr"</b></string>
+    <string name="begning_num"><b>"1"</b></string>
+    <string name="jamaattimes"><b>"Jamaat Times"</b></string>
+
+</resources>

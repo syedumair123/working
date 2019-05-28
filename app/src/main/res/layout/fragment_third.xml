@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_220sdp"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/gredient">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/thirdfrag"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/txt_beginning_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jamaattimes"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="#0396AB"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/txt_namaz_names"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdfrag"
+
+        android:layout_marginRight="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/txt_fajr_beginning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#00587A"
+            android:text="@string/fajr_"
+            android:layout_toStartOf="@+id/txt_zuhr_beginning"/>
+
+        <TextView
+            android:id="@+id/txt_zuhr_beginning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#00587A"
+            android:layout_toStartOf="@+id/txt_asr_beginning"
+            android:text="@string/zuhr"
+            android:layout_marginLeft="@dimen/_30sdp"
+            />
+
+        <TextView
+            android:id="@+id/txt_asr_beginning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#00587A"
+            android:layout_toStartOf="@+id/txt_maghrib_beginning"
+            android:text="@string/asr"
+            android:layout_marginLeft="@dimen/_32sdp"/>
+
+        <TextView
+            android:id="@+id/txt_maghrib_beginning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#00587A"
+            android:layout_toStartOf="@+id/txt_isha_beginning"
+            android:text="@string/maghrib"
+            android:layout_marginLeft="@dimen/_24sdp"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_isha_beginning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/isha"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="#00587A"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="@dimen/_26sdp"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_namaz_names">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/RV_jamaat_times"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@+id/txt_namaz_names"/>
+
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".OnBoarding">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_Onboarding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:background="@color/gradientColorFour"
+        android:layout_centerHorizontal="true"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rrr"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_width="match_parent"
+        android:gravity="center|end"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:id="@+id/rr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/SKIPbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/robotoregular"
+                android:textSize="@dimen/_18sdp"
+                android:background="@null"
+                android:textAllCaps="false"
+                android:text="Skip"/>
+
+
+
+
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="@dimen/_18sdp"
+                android:textColor="@color/white"/>
+
+
+
+
+
+
+
+
+
+
+            <Button
+                android:layout_centerHorizontal="true"
+                android:id="@+id/NextBtn"
+                android:textSize="@dimen/_18sdp"
+                android:fontFamily="@font/robotoregular"
+                android:background="@null"
+                android:textColor="@color/white"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Next"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

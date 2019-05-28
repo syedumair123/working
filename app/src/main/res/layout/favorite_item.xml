@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layoutDirection="ltr"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:layout_marginRight="@dimen/_18sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="@dimen/_323sdp"
+        android:layout_height="@dimen/_89sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_"
+                android:layout_width="@dimen/_81sdp"
+                android:layout_height="@dimen/_79sdp"
+                android:layout_margin="@dimen/_6sdp"
+                android:background="@drawable/img"/>
+
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_8sdp"
+                android:id="@+id/txt_Masajid"
+                android:text="Masjid-e-Rehman"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/segoeuiregular"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp"
+                android:layout_toEndOf="@id/img_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_below="@id/txt_Masajid"
+                android:layout_toEndOf="@id/img_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/segoeuiregular"
+                android:text="231, Liverpool UK"/>
+
+            <TextView
+                android:id="@+id/TextMiles"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_19sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="121212"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <TextView
+                android:layout_below="@+id/TextMiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/_8sdp"
+                android:text="miles Away"/>
+
+            <ImageView
+                android:id="@+id/pic_favorite"
+                android:layout_below="@+id/TextMiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_favorite"/>
+
+            <TextView
+                android:id="@+id/txt_favorite"
+                android:layout_below="@+id/pic_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Favorited"
+                android:textColor="#00587A"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/_10sdp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

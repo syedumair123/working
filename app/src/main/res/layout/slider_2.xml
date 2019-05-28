@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+
+    <TextView
+        android:id="@+id/txtone"
+        android:layout_marginTop="@dimen/_62sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive Adhaan alerts      on time"
+        android:textSize="@dimen/_24sdp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/segoeuiregular"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:gravity="center"/>
+
+
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_81sdp"
+        android:layout_below="@id/txtone"
+        android:layout_width="@dimen/_143sdp"
+        android:layout_height="@dimen/_147sdp"
+        android:background="@drawable/ic_notify"/>
+
+
+
+</RelativeLayout>

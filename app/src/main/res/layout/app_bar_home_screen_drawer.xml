@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_143sdp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/humburgerIcon"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/ic_menu_white_24dp"/>
+
+            <ImageView
+                android:id="@+id/Logo"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_41sdp"
+                android:src="@drawable/my_mosque_logo"/>
+
+
+
+            <EditText
+                android:layout_below="@+id/Logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:background="@drawable/edt_round_background_"
+                android:hint="Search Masajid"
+                android:inputType="text"
+                android:fontFamily="@font/segoeuiregular"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp"
+                android:paddingHorizontal="@dimen/_12sdp"/>
+
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+
+</android.support.design.widget.CoordinatorLayout>

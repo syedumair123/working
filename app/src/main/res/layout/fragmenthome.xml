@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/barLayout_"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_143sdp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:id="@+id/home_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/humburgerIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/ic_menu_white_24dp" />
+
+
+            <ImageView
+                android:id="@+id/Logo"
+                android:layout_width="@dimen/_76sdp"
+                android:layout_height="@dimen/_41sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:src="@drawable/my_mosque_logo" />
+
+
+            <EditText
+                android:id="@+id/edit_txt_masjid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_below="@+id/Logo"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:background="@drawable/edt_round_background_"
+                android:fontFamily="@font/segoeuiregular"
+                android:hint="Search Masajid"
+                android:focusable="false"
+                android:inputType="text"
+                android:paddingHorizontal="@dimen/_12sdp"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.design.widget.AppBarLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/barLayout_"
+    >
+
+    <TextView
+        android:id="@+id/Text_HeadingMasajid"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:textSize="@dimen/_18sdp"
+
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segoeuiregular"
+        android:layout_alignParentLeft="true"
+        android:text="Find your Masajid"/>
+
+
+    <android.support.v7.widget.RecyclerView
+    android:id="@+id/RV_masajidList"
+    android:layout_below="@id/Text_HeadingMasajid"
+    android:layout_width="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_height="match_parent"/>
+
+</RelativeLayout>
+
+</RelativeLayout>

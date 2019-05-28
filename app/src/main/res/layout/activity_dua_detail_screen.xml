@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DuaDetailScreen">
+    <RelativeLayout
+        android:id="@+id/top_"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Dua Details"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/robotoregular"/>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@id/top_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/Layout_C"
+
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_curve_pc_">
+                <RelativeLayout
+                    android:id="@+id/layout_Top_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@drawable/round_black_">
+                    <TextView
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Dua "
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/Text_Arabic_Tranxlation"
+                    android:layout_below="@id/layout_Top_b"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Dua place holder"
+                    android:textAlignment="center"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Layout_A"
+                android:layout_below="@id/Layout_C"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_curve_pc_">
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_Top_"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@drawable/round_black_">
+
+
+
+                    <TextView
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Title"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/Text_Intoduction_"
+                    android:layout_below="@id/layout_Top_"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="title will come here"
+                    android:textAlignment="center"/>
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Layout_B"
+                android:layout_below="@id/Layout_A"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_curve_pc_">
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/layout_Top_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/_1sdp"
+                    android:background="@drawable/round_black_">
+
+
+
+                    <TextView
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Dua Translation"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/Text_Arabic_"
+                    android:layout_below="@id/layout_Top_a"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:text="Arabic translation placeholder"
+                    android:textAlignment="center"/>
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/_60sdp">
+
+
+        <SeekBar
+            android:id="@+id/Seekbar"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:max="50"
+            android:enabled="false"
+
+            android:progressTint="@color/white"
+            android:thumbTint="@color/white"
+            android:progressBackgroundTint="#ECECF7"/>
+
+
+        <RelativeLayout
+            android:layout_below="@id/Seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/Stop"
+
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+
+                android:background="@drawable/ic_music_stop"/>
+
+
+            <ImageView
+                android:id="@+id/Play"
+
+                android:layout_toEndOf="@id/Stop"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/ic_music_play"/>
+
+
+            <ImageView
+                android:id="@+id/Pause"
+                android:layout_toEndOf="@id/Play"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_1sdp"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:background="@drawable/ic_music_pause"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

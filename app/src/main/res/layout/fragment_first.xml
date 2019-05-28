@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="@dimen/_220sdp"
+    android:layout_centerHorizontal="true"
+
+    android:background="@drawable/gredient">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/firstfrag"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daily"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="#0396AB"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/txt_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/start"
+            android:layout_toEndOf="@+id/txt_daily"
+            android:layout_alignBaseline="@+id/txt_daily"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="#0396AB"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_60sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/txt_jamaat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jamaat"
+            android:layout_alignBaseline="@+id/txt_start"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="#0396AB"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/firstfrag">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/txt_sehriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/sehriends"
+                android:textColor="#00587A"
+                android:textSize="@dimen/_14sdp"
+                />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_90sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="05:45"
+                android:textColor="#00587A" />
+
+
+            <View
+
+                android:id="@+id/View1"
+                android:layout_below="@id/txt_sehriends"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#00587A"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/txt_fajr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View1"
+                android:text="@string/fajr"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_fajr_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View1"
+                android:text="05:45"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_fajr_jamaat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View1"
+                android:text="05:45"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+
+            <View
+
+                android:id="@+id/View2"
+                android:layout_below="@id/txt_fajr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#00587A"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/txt_sunrise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View2"
+                android:text="@string/sunrise"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:textColor="#00587A"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_sunrise_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View2"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toEndOf="@id/txt_fajr_start_time"
+                android:text="05:45"
+                android:textColor="#00587A" />
+
+            <View
+
+                android:id="@+id/View3"
+                android:layout_below="@id/txt_sunrise_time"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#00587A"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+
+            <TextView
+                android:id="@+id/txt_zuhr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View3"
+                android:text="@string/zuhr"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_zuhr_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View3"
+                android:text="05:45"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_zuhr_jamaat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View3"
+                android:text="05:45"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+
+            <View
+
+                android:id="@+id/View4"
+                android:layout_below="@id/txt_zuhr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#00587A"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/txt_asr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View4"
+                android:text="@string/asr"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_asr_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View4"
+                android:text="05:45"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_asr_jamaat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View4"
+                android:text="05:45"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <View
+
+                android:id="@+id/View5"
+                android:layout_below="@id/txt_asr"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#00587A"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/txt_maghrib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View5"
+                android:text="@string/maghrib"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_maghrib_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View5"
+                android:text="05:45"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_maghrib_jamaat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View5"
+                android:text="05:45"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <View
+
+                android:id="@+id/View6"
+                android:layout_below="@id/txt_maghrib"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#00587A"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_4sdp"/>
+
+            <TextView
+                android:id="@+id/txt_isha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View6"
+                android:text="@string/isha"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_isha_start_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View6"
+                android:text="05:45"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"/>
+
+            <TextView
+                android:id="@+id/txt_isha_jamaat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/View6"
+                android:text="05:45"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/_22sdp"
+                android:textColor="#00587A"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_14sdp"
+                android:layout_marginBottom="@dimen/_10sdp"/>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
+
+
+
+

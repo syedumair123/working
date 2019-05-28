@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_search"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/_18sdp"
+                />-->
+
+            <EditText
+android:id="@+id/search_text"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_18sdp"
+                android:layout_marginLeft="@dimen/_18sdp"
+                android:background="@drawable/edt_round_background_"
+                android:hint="Search Duas"
+                android:inputType="text"
+                android:fontFamily="@font/segoeuiregular"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:paddingHorizontal="@dimen/_12sdp"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RV_DUAS"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_below="@id/AppBar"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_qibla">
+
+
+    <ImageView
+        android:id="@+id/kaaba_compass"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:background="@drawable/ic_compass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_110sdp"/>
+
+    <ImageView
+        android:layout_alignRight="@+id/kaaba_compass"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:background="@drawable/kaaba"
+        android:layout_marginTop="@dimen/_115sdp"/>
+
+    <TextView
+        android:id="@+id/txt_north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_125sdp"
+        />
+
+    <TextView
+        android:id="@+id/txt_south"
+        android:layout_below="@+id/txt_north"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_100sdp"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_west"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="W"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:layout_alignLeft="@+id/kaaba_compass"
+        android:layout_marginTop="@dimen/_190sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        />
+
+    <TextView
+        android:id="@+id/txt_east"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/white"
+        android:layout_alignRight="@+id/kaaba_compass"
+        android:layout_marginTop="@dimen/_190sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        />
+
+    <TextView
+        android:id="@+id/txt_qibla_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday"
+        android:textStyle="bold"
+        android:textSize="@dimen/_18sdp"
+        android:textColor="@color/white"
+        android:layout_below="@+id/kaaba_compass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_80sdp"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_qibla_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 jumadal Ula 1440 AH"
+        android:textSize="@dimen/_14sdp"
+        android:layout_below="@+id/txt_qibla_day"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/txt_qibla_date"
+        android:layout_below="@+id/txt_qibla_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10th January 2019"
+        android:textColor="#A7BEC7"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

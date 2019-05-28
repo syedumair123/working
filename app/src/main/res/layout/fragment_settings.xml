@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    >
+
+
+    <TextView
+        android:id="@+id/text_AdanNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adhan Notifications"
+        android:fontFamily="@font/segoeuiregular"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:textSize="@dimen/_18sdp"/>
+
+
+    <Switch
+        android:id="@+id/Switch_Notification_"
+        android:layout_toEndOf="@id/text_AdanNotification"
+        android:layout_alignBaseline="@id/text_AdanNotification"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/colorPrimary"
+        android:textColorHighlight="@color/colorPrimary"
+        android:thumbTint="@color/colorPrimary"
+        android:layout_marginRight="@dimen/_10sdp"/>
+
+
+
+    <TextView
+        android:id="@+id/textTimeViewIN_"
+        android:layout_below="@id/Switch_Notification_"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View time in"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/segoeuiregular"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"/>
+
+
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTimeViewIN_"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12h"
+            android:id="@+id/radioButton"
+            android:buttonTint="#CBCBCB"
+            android:textColor="#CBCBCB"
+            android:textSize="@dimen/_14sdp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24h"
+            android:textColor="#CBCBCB"
+            android:id="@+id/radioButton2"
+            android:textColorHighlight="#CBCBCB"
+            android:textColorHint="#CBCBCB"
+            android:buttonTint="#CBCBCB"
+            android:layout_marginLeft="@dimen/_14sdp"
+            android:textSize="@dimen/_14sdp"
+            />
+    </RadioGroup>
+
+
+
+    <View
+        android:id="@+id/Line1"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        />
+
+
+    <TextView
+        android:id="@+id/Text_Salaah_"
+        android:layout_below="@id/Line1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salaah Alerts"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:textSize="@dimen/_16sdp"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/segoeuiregular"
+        android:textStyle="bold"/>
+
+
+
+
+    <RadioGroup
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Text_Salaah_"
+        android:id="@+id/radioGroupSalaah"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Adhan"
+            android:id="@+id/radioButtonFullAdhan"
+            android:buttonTint="#CBCBCB"
+            android:textColor="#CBCBCB"
+            android:textSize="@dimen/_14sdp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Short Adhaan"
+            android:textColor="#CBCBCB"
+            android:id="@+id/radioButtonShortAdhan"
+            android:textColorHighlight="#CBCBCB"
+            android:textColorHint="#CBCBCB"
+            android:buttonTint="#CBCBCB"
+            android:textSize="@dimen/_14sdp"
+            />
+    </RadioGroup>
+
+
+
+    <View
+        android:id="@+id/Line2"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@id/radioGroupSalaah"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
